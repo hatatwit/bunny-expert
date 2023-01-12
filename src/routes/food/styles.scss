@@ -5,9 +5,23 @@
     padding: 0 2em;
 
     h1 {
-        padding-top: 0.5em;
+        width: 100%;
         text-align: center;
-    }
+        font-weight: 700;
+        font-size: 5em;
+        text-shadow: -15px 5px 20px #ced0d3;
+        transform: translate(-1%,-1%);
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #F9f1cc;
+        text-shadow: 
+            3px 3px 0px #FFB650, 
+            6px 6px 0px #FFD662, 
+            9px 9px 0px  #FF80BF, 
+            12px 12px 0px #EF5097, 
+            15px 15px 0px #6868AC, 
+            18px 18px 0px #90B1E0;
+        }
 
     .search {
         margin: auto;
