@@ -1,30 +1,25 @@
 .food {
-    position: relative;
-    margin-bottom: 2em;
-    overflow: auto;
-    padding: 0 2em;
+  position: relative;
+  margin-bottom: 2em;
+  overflow: auto;
+  padding: 0 2em;
 
-    h1 {
-        width: 100%;
-        text-align: center;
-        font-weight: 700;
-        font-size: 5em;
-        text-shadow: -15px 5px 20px #ced0d3;
-        transform: translate(-1%,-1%);
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #F9f1cc;
-        text-shadow: 
-            3px 3px 0px #FFB650, 
-            6px 6px 0px #FFD662, 
-            9px 9px 0px  #FF80BF, 
-            12px 12px 0px #EF5097, 
-            15px 15px 0px #6868AC, 
-            18px 18px 0px #90B1E0;
-        }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 5em;
+    text-shadow: -15px 5px 20px #ced0d3;
+    transform: translate(-1%, -1%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #f9f1cc;
+    text-shadow: 3px 3px 0px #ffb650, 6px 6px 0px #ffd662, 9px 9px 0px #ff80bf,
+      12px 12px 0px #ef5097, 15px 15px 0px #6868ac, 18px 18px 0px #90b1e0;
+  }
 
-    .search {
-        margin: auto;
-        padding: 1em;
-    }
+  .search {
+    margin: auto;
+    padding: 1em;
+  }
 }

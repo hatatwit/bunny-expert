@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { FoodContext } from "../../DataContext";
-import CardList from "../../components/card/CardList";
+import GlassCard from "../../components/card/GlassCard";
 import SearchBar from "../../components/input/SearchBar";
 
 import "./styles.scss";
@@ -25,7 +25,11 @@ export default function Food() {
     <div className="food">
       <h1>Food</h1>
       <SearchBar onChange={onSearch} placeholder="What are you looking for?" />
-      {data && <CardList data={filteredData} />}
+      <div className="cards">
+        {filteredData?.map((food) => {
+          return <GlassCard key={food._id} food={food} />;
+        })}
+      </div>
     </div>
   );
 }
