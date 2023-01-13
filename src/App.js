@@ -4,6 +4,7 @@ import Home from "./routes/home/Home";
 import About from "./routes/about/About";
 import Food from "./routes/food/Food";
 import Health from "./routes/health/Health";
+import Contact from "./routes/contact/Contact";
 import { FoodProvider } from "./DataContext";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="food" element={<Food />} />
           <Route path="health" element={<Health />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </FoodProvider>

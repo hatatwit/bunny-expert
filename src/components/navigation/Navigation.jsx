@@ -21,8 +21,8 @@ export default function Navigation() {
           <div class="nav-link">
             <Link to="/about">About</Link>
           </div>
-          <div class="nav-link btn">
-            <a href="#donate">Donate</a>
+          <div class="nav-link btn" id="nav-link-btn">
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
         <button className="hamburger" onClick={() => setnavOpen(!navOpen)}>
@@ -37,7 +37,7 @@ export default function Navigation() {
           <Link to="/food">Food</Link>
           <Link to="/health">Health</Link>
           <Link to="/about">About</Link>
-          <a href="#donate">Donate</a>
+          <Link to="/contact">Contact</Link>
         </div>
         <div className="social-icons">
           <a href="https://www.instagram.com/spunkie_thebun/?hl=en"><i class="fa-brands fa-instagram"></i></a>

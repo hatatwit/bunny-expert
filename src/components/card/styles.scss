@@ -83,7 +83,6 @@
       width: 100%;
     }
   }
-  
 }
 //----- Shadow Card End -----//
 
@@ -94,14 +93,14 @@
   width: 30%;
   margin: auto;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 4px 8px 3px #ced0d3;
-  padding: 15px 15px 60px 15px;
+  padding: 15px 15px 80px 15px;
 
   img {
     width: 100%;
     height: 345px;
-    border-radius: 25px;
+    border-radius: 10px;
     object-fit: cover;
   }
 
@@ -127,9 +126,5 @@
     }
   }
 }
-
-
-  
-
 
 //----- Polaroid End -----//

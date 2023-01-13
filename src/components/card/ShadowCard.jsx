@@ -1,9 +1,9 @@
 import "./styles.scss";
 
-export default function ShadowCard({text}) {
+export default function ShadowCard({content}) {
   return (
       <div className="text-content">
-        <p>{text}</p>
+        {content}
       </div>
  );
 }
