@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 550px;
 
   .container {
     width: 80%;
@@ -17,6 +16,7 @@
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+
     p {
         color: #ff80bf;
         text-align: center;
@@ -27,8 +27,8 @@
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
   }
 
   form {
@@ -85,6 +85,35 @@
   
   input[type="submit"]:hover {
     background-color: #e36138;
+  }
+
+  @media (max-width: 830px) {
+    .container{
+      flex-direction: column;
+      padding: 0;
+      p{
+        font-size: small;
+      }
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 3em;
+      text-shadow: -15px 5px 20px #ced0d3;
+      transform: translate(-1%, -1%);
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: #f9f1cc;
+      text-shadow: 2px 2px 0px #ffb650, 5px 5px 0px #ffd662, 8px 8px 0px #ff80bf,
+        11px 11px 0px #ef5097, 14px 14px 0px #6868ac, 17px 17px 0px #90b1e0;
+    }
   }
   
 }

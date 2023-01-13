@@ -24,6 +24,12 @@ export default function Food() {
   return (
     <div className="food">
       <h1>Food</h1>
+        <p className="description">
+          <span className="special-text">Moderate</span> - These foods can be given to your rabbit on a daily basis in moderate quantities.<br/>
+          <span className="special-text">Limited</span> - These foods can be given to your rabbit 1-3 times per week in small amounts.<br/>
+          <span className="special-text">None</span> - These foods should not be given to your rabbit at all.
+        </p>
+      
       <SearchBar onChange={onSearch} placeholder="What are you looking for?" />
       <div className="cards">
         {filteredData?.map((food) => {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { send } from "emailjs-com";
 import ShadowCard from "../../components/card/ShadowCard";
 import HeroImg from "../../assets/hero-img.png"
 
@@ -11,7 +12,8 @@ export default function Contact() {
     email: "",
     mes: ""
   })
-
+  
+  //----- Medthod to track user's inputs -----//
   const handleChange = (event) => {
     const {name, value} = event.target;
 
@@ -23,13 +25,36 @@ export default function Contact() {
     })
   }
 
+  //----- Medthod to send the mail using EmailJS -----//
+  const handleSubmit =  (event) => {
+    event.preventDefault();
+    send(
+      "service_d9i3mma",  // Service id
+      "template_4uer6b7", // Template id
+      contact,
+      "7HPI6_nLiQW8fioVW" // User id
+    ).then((response) => {
+      console.log("Success!", response.status, response.text);
+      // Clean up fields after submit
+      setContact({
+        name: "",
+        email: "",
+        mes: ""
+      });
+      alert("Message Sent Successfully!");
+    }).catch((err) => {
+      console.log("Failed ... ", err);
+      alert("Message Sent Unsuccessfully!");
+    })
+  }
+
   return (
     <div className="contact">
       <div className="container">
         <div className="logo">
           <img src={HeroImg} alt="" srcset="" />
         </div>
-        <ShadowCard content={<form>
+        <ShadowCard content={<form onSubmit={handleSubmit}>
           <h1>Contact</h1>
           <p>Send message whether you have questions, bug reports, feedback or simply get in touch, I'd love to here from you.</p>
           <div class="form-group">
@@ -46,7 +71,6 @@ export default function Contact() {
           </div>
           <input type="submit" value="Send" />
         </form>}/>
-       
       </div>
     </div>
   );
