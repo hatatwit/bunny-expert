@@ -1,39 +1,123 @@
+//----- Search Bar Start -----//
+
 .search {
-    width: 45%;
-    position: relative;
-    display: flex;
+  width: 45%;
+  position: relative;
+  display: flex;
+  margin: 1.5rem;
 
-    .searchTerm {
-        width: 100%;
-        border: 3px solid #e36138;
-        border-right: none;
-        padding: 5px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9DBFAF;
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #e36138;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
 
-        &:focus {
-            color: #e36138;
-        }
+    &:focus {
+      color: #e36138;
     }
+  }
 
-    .searchButton {
-        width: 40px;
-        height: 40px;
-        border: 1px solid #e36138;
-        background-color: #e36138;
-        text-align: center;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e36138;
+    background-color: #e36138;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  @media (max-width: 830px) {
+    & {
+      width: 80%;
     }
-
-    @media (max-width: 830px) {
-        & {
-            width: 80%;
-        }
-    }
-
+  }
 }
 
+//----- Search Bar End -----//
+
+//----- Radio Button Start -----//
+label {
+  display: block;
+  margin-top: 0.1em;
+
+  &,
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    /* hiding browser el */
+    appearance: none;
+    /* Safari support */
+    -webkit-appearance: none;
+    border: 0.2rem solid #fff;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #999;
+
+    /* keyboard navigation focus appearance */
+    &:focus-visible {
+      outline-offset: 0;
+    }
+
+    &:hover {
+      border-width: 0;
+    }
+
+    &:checked {
+      box-shadow: 0 0 0 1px #ffd662;
+      background-color: #ffd662;
+      border-width: 0.2rem;
+    }
+  }
+}
+
+//----- Radio Button End -----//
+
+//----- Button Start -----//
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ef5097;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #ffb650;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  display: block;
+  margin: 0 auto;
+  line-height: 18px * 2;
+  padding: 0 20px;
+  background: #ffd662;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 1px 1px #6868ac, 3px 3px 1px 2px rgba(0, 0, 0, 1);
+}
+
+input[type="submit"]:hover {
+  background-color: #e36138;
+}
+//----- Button End -----//

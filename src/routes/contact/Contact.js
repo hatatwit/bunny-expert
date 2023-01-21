@@ -4,6 +4,7 @@ import ShadowCard from "../../components/card/ShadowCard";
 import HeroImg from "../../assets/hero-img.png"
 
 import "./styles.scss";
+import Button from "../../components/input/Button";
 
 export default function Contact() {
   
@@ -69,7 +70,7 @@ export default function Contact() {
             <label for="mes">Message</label>
             <textarea value={contact.mes} name="mes" onChange={handleChange} required></textarea>
           </div>
-          <input type="submit" value="Send" />
+          <Button type="submit" value="Send"/>
         </form>}/>
       </div>
     </div>

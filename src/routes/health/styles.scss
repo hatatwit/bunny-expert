@@ -1,0 +1,10 @@
+.health {
+    position: relative;
+    overflow: auto;
+    padding: 0 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}

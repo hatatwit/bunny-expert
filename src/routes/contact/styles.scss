@@ -12,7 +12,7 @@
     width: 80%;
     display: flex;
     flex-direction: row;
-    padding: 1.5em;
+    margin: 1.5em;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
@@ -27,8 +27,8 @@
   }
 
   img {
-    width: 380px;
-    height: 380px;
+    width: 390px;
+    height: 390px;
   }
 
   form {
@@ -50,41 +50,6 @@
     background-color: white;
     font-size: 18px;
     color: #6868ac;
-  }
-  
-  input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #ef5097;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-  
-  input[type="submit"] {
-    background-color: #ffb650;
-    color: white;
-    padding: 12px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    display: block;
-    margin: 0 auto;
-    line-height: 18px * 2;
-    padding: 0 20px;
-    background: #ffd662;
-    letter-spacing: 2px;
-    transition: .2s all ease-in-out;
-    outline: none;
-    border: 1px solid rgba(0,0,0,1);
-    box-shadow: 3px 3px 1px 1px  #6868ac, 3px 3px 1px 2px rgba(0,0,0,1);
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #e36138;
   }
 
   @media (max-width: 830px) {

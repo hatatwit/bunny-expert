@@ -1,0 +1,186 @@
+{
+  "survey": [
+    {
+      "id": 0,
+      "topic": "appetite",
+      "question": "What is the current state of your rabbit's appetite?",
+      "description": "Options: None (not eating), Low (eating a little bit), Normal (eating normally)",
+      "options": ["None", "Low", "Usual"]
+    },
+    {
+      "id": 2,
+      "topic": "digestion",
+      "question": "Does your rabbit's stomach make loud gurgling noises or is it silent?",
+      "description": "Options:  Yes (make loud gurgling noise or no sound), No (make normal sound)",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 3,
+      "topic": "defecation",
+      "question": "Does your rabbit produce no poop at all or small, deformed poops?",
+      "description": "Options:  Yes (your rabbit's poops are small, deformed or no poops at all), No (your rabbit's poop doesn't change)",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 4,
+      "topic": "posture",
+      "question": "Does your rabbit stand in a hunched posture?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 5,
+      "topic": "lethargy",
+      "question": "Does your rabbit lose energy?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 6,
+      "topic": "scratching",
+      "question": "Does your rabbit constantly scratch its ears?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 7,
+      "topic": "hd_shaking",
+      "question": "Does your rabbit constantly shake its head?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 8,
+      "topic": "crust_area",
+      "question": "Does your rabbit have a crust forming somewhere on its body?",
+      "description": "",
+      "options": ["None", "Inner Ears", "Body"]
+    },
+    {
+      "id": 9,
+      "topic": "drooling",
+      "question": "Does your rabbit drool?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 10,
+      "topic": "swollen_area",
+      "question": "Does your rabbit have any swollen areas on its body?",
+      "description": "",
+      "options": ["None", "Eyes", "Eyelids", "Nose", "Abdomen"]
+    },
+    {
+      "id": 11,
+      "topic": "red_ears",
+      "question": "Does your rabbit have red ears",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 12,
+      "topic": "balance",
+      "question": "Is your rabbit trembling, shaking or experiencing loss of balance?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 13,
+      "topic": "hd_lifting",
+      "question": "Does your rabbit suddenly lift its head?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 14,
+      "topic": "sneezing",
+      "question": "Does your rabbit sneeze multiple times a day?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 15,
+      "topic": "watery_eyes",
+      "question": "Does your rabbit have watery eyes?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 16,
+      "topic": "runny_nose",
+      "question": "Does your rabbit have runny nose?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 17,
+      "topic": "breathing",
+      "question": "How is your rabbit breathing?",
+      "description": "Options: Low (dyspnea), Normal (normal breathing), High (panting)",
+      "options": ["Low", "Normal", "High"]
+    },
+    {
+      "id": 18,
+      "topic": "hd_titl",
+      "question": "Does your rabbit's head suddenly tilt?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 19,
+      "topic": "peeing_frq",
+      "question": "How frequently does your rabbit pee?",
+      "description": "Options: None (Not peeing), Infrequent (normal), Frequent (peeing more frequently)",
+      "options": ["None", "Infrequent", "Frequent"]
+    },
+    {
+      "id": 20,
+      "topic": "peeing_sludge",
+      "question": "Is your rabbit urine sludgy?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 21,
+      "topic": "peeing_bloody",
+      "question": "Is your rabbit urine bloody?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 22,
+      "topic": "weght_loss",
+      "question": "Does your rabbit lose weight signigicantly?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 23,
+      "topic": "discharged_eyes",
+      "question": "Does your rabbit have discharged eyes?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 24,
+      "topic": "overgwn_teeth",
+      "question": "Do you notice any of your rabbit teeth are overgrown that are pointy, or curved in its mouth?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 25,
+      "topic": "lump",
+      "question": "Does your rabbit have any lump?",
+      "description": "",
+      "options": ["No", "Yes"]
+    },
+    {
+      "id": 26,
+      "topic": "fur_lost",
+      "question": "Does your rabbit lose fur?",
+      "description": "",
+      "options": ["No", "Yes"]
+    }
+  ]
+}
