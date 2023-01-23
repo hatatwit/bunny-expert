@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { HealthContext } from "../../DataContext";
+import { PredictionContext } from "../../DataContext";
 import RadioButton from "../input/RadioButton";
 
 import "./styles.scss";
 
 export default function Option({optionList, topic}) {
-    const [symptoms, setSymptoms] = useContext(HealthContext);
+    const [symptoms, setSymptoms] = useContext(PredictionContext);
 
     const handleChange = (event) => {
         let {name, value} = event.target;

@@ -1,73 +1,121 @@
-import { useContext } from "react";
-import axios, { all } from "axios";
-import { HealthContext } from "../../DataContext";
-import Survey from "../../assets/survey.json";
-import Question from "../../components/survey/Question";
+import { useContext, useState } from "react";
+import axios from "axios";
+import { PredictionContext } from "../../DataContext";
+import HealthDB from "../../assets/healthDB.json";
 
-import "./styles.scss";
+import Question from "../../components/survey/Question";
 import Button from "../../components/input/Button";
 
+import "./styles.scss";
+import Modal from "../../components/card/Modal";
+import { clear } from "@testing-library/user-event/dist/clear";
+
 export default function Health() {
-  const [symptoms, setSymptoms] = useContext(HealthContext);
+  const [symptoms, setSymptoms] = useContext(PredictionContext);
+  const [result, setResult] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
 
-  const resetSymptoms = () => {
-    setSymptoms({
-      appetite: null,
-      digestion: null,
-      defecation: null,
-      posture: null,
-      lethargy: null,
-      scratching: null,
-      hd_shaking: null,
-      crust_area: null,
-      drooling: null,
-      swollen_area: null,
-      red_ears: null,
-      balance: null,
-      hd_lifting: null,
-      sneezing: null,
-      watery_eyes: null,
-      runny_nose: null,
-      breathing: null,
-      hd_titl: null,
-      peeing_frq: null,
-      peeing_sludge: null,
-      peeing_bloody: null,
-      weght_loss: null,
-      discharged_eyes: null,
-      overgwn_teeth: null,
-      lump: null,
-      fur_lost: null,
-    })
-  }
-
+  // Update symptoms with user inputs and send it to BunnyDiseasesAPI
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(symptoms);
     //Make API call and store in data
     axios
       .post("https://vadu81.deta.dev/prediction", symptoms)
       .then((res) => {
-        const data = res.data.data;
-        const parameters = JSON.stringify(symptoms);
-        const msg = `Prediction: ${data.prediction}\nInterpretation: ${data.interpretation}\nParameters: ${parameters}`;
-        alert(msg);
-        resetSymptoms();
+        console.log(
+          "Result: " +
+            JSON.stringify(res.data.data.result) +
+            "\n Interpretation: " +
+            res.data.data.interpretation +
+            "\n Parameters: " +
+            JSON.stringify(symptoms)
+        );
+
+        // Send BunnyDiseaseAPI interpretation to diseaseChecker to get specific disease info
+        diseaseChecker(res.data.data.interpretation);
+        setOpenModal(true);
       })
       .catch((err) => {
         console.log(err);
       });
   };
 
+  // Check if each item in BunnyDiseasesAPI interpretation is in HealthDB, then return diseases info
+
+  const diseaseChecker = (interpretation) => {
+    const matches = HealthDB.diseases.filter((disease) =>
+      interpretation.includes(disease.disease)
+    );
+    setResult(matches);
+  };
+
+  // Clear result and refresh the page
+  const clearForm = () => {
+    setOpenModal(false);
+    setResult([]);
+    window.location.reload();
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="health">
       <h1>Health</h1>
       <form onSubmit={handleSubmit}>
-        {Survey.survey.map((questionItem) => (
+        {/* Loop through each question in HeathDB and render it using Question component */}
+        {HealthDB.survey.map((questionItem) => (
           <Question key={questionItem.id} questionItem={questionItem} />
         ))}
-        <Button type="submit" value="Submit"/>
+        <Button type="submit" value="Submit" />
       </form>
+      {/* Display result */}
+      <Modal
+        open={openModal}
+        onClose={() => clearForm()}
+        content={
+          <div className="prediction-content">
+            {result.length === 0 ? (
+              <div className="result">
+                <h2>Healthy</h2>
+                <span className="note">
+                  *** Please remember that the advice and information provided
+                  should be used as references. If you notice that your rabbit
+                  is not feeling well, please seek guidance from your
+                  veterinarian as soon as possible.
+                </span>
+              </div>
+            ) : (
+              <div className="disease-info">
+                {result.map((item) => (
+                  <div className="result">
+                    <h2>{item.disease}</h2>
+                    <p>
+                      <span className="special-text">Cause:</span> {item.cause}
+                    </p>
+                    <p>
+                      <span className="special-text">Symptoms:</span>{" "}
+                      {item.symptoms}
+                    </p>
+                    <p>
+                      <span className="special-text">Prevention:</span>{" "}
+                      {item.prevention}
+                    </p>
+                    <p>
+                      <span className="special-text">Treatment:</span>{" "}
+                      {item.treatment}
+                    </p>
+                  </div>
+                ))}
+                <span className="note">
+                  *** Please remember that the advice and information provided
+                  should be used as references. If you notice that your rabbit
+                  is not feeling well, please seek guidance from your
+                  veterinarian as soon as possible.
+                </span>
+              </div>
+            )}
+          </div>
+        }
+      />
     </div>
   );
 }

@@ -5,12 +5,12 @@ import About from "./routes/about/About";
 import Food from "./routes/food/Food";
 import Health from "./routes/health/Health";
 import Contact from "./routes/contact/Contact";
-import { FoodProvider, HealthProvider } from "./DataContext";
+import { FoodProvider, PredictionProvider } from "./DataContext";
 
 function App() {
   return (
     <FoodProvider>
-      <HealthProvider>
+      <PredictionProvider>
         <Routes>
           <Route path="/" element={<Navigation />}>
             <Route index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
-      </HealthProvider>
+      </PredictionProvider>
     </FoodProvider>
   );
 }

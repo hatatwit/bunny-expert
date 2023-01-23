@@ -29,11 +29,11 @@ export const FoodProvider = (props) => {
 
 //----- Food Context End -----//
 
-//----- Health Context Start -----//
+//----- Prediction Context Start -----//
 
-export const HealthContext = createContext();
+export const PredictionContext = createContext();
 
-export const HealthProvider = (props) => {
+export const PredictionProvider = (props) => {
   const [symptoms, setSymptoms] = useState({
     appetite: null,
     digestion: null,
@@ -64,13 +64,13 @@ export const HealthProvider = (props) => {
   });
 
   return (
-    <HealthContext.Provider value={[symptoms, setSymptoms]}>
+    <PredictionContext.Provider value={[symptoms, setSymptoms]}>
       {props.children}
-    </HealthContext.Provider>
+    </PredictionContext.Provider>
   );
 };
 
-//----- Health Context End -----//
+//----- Prediction Context End -----//
 
 
 

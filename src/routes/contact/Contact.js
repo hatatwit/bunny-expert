@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { send } from "emailjs-com";
+
 import ShadowCard from "../../components/card/ShadowCard";
 import HeroImg from "../../assets/hero-img.png"
+import Button from "../../components/input/Button";
+import Modal from "../../components/card/Modal";
 
 import "./styles.scss";
-import Button from "../../components/input/Button";
 
 export default function Contact() {
   
@@ -13,6 +15,9 @@ export default function Contact() {
     email: "",
     mes: ""
   })
+
+  const [openModal, setOpenModal] = useState(false);
+  const [noticeMes, setNoticeMes] = useState("")
   
   //----- Medthod to track user's inputs -----//
   const handleChange = (event) => {
@@ -42,10 +47,11 @@ export default function Contact() {
         email: "",
         mes: ""
       });
-      alert("Message Sent Successfully!");
+      setNoticeMes("Message Sent Successfully!");
+      setOpenModal(true);
     }).catch((err) => {
       console.log("Failed ... ", err);
-      alert("Message Sent Unsuccessfully!");
+      setNoticeMes("Message Sent Unsuccessfully!");
     })
   }
 
@@ -72,6 +78,8 @@ export default function Contact() {
           </div>
           <Button type="submit" value="Send"/>
         </form>}/>
+        {/* If email sent, display notice message */}
+        <Modal content={<p>{noticeMes}</p>} open={openModal} onClose={() => setOpenModal(false)}/>
       </div>
     </div>
   );

@@ -18,20 +18,20 @@ export default function About() {
       img: AboutTrang,
       text: (
         <p>
-          I'm{" "}
+          I'm
           <a
             href="https://www.instagram.com/missha_1999/?hl=en"
             className="special-text"
           >
             Trang
           </a>
-          , and{" "}
+          , and
           <a
             href="https://www.instagram.com/spunkie_thebun/?hl=en"
             className="special-text"
           >
             Spunkie
-          </a>{" "}
+          </a>
           is the first ever pet rabbit that I have owned. I have had a cat and
           dog before, but rabbits are the best pet for me right now. One of the
           main reasons is that I hate touching meat, so taking care of a rabbit
@@ -58,7 +58,7 @@ export default function About() {
           traveling and exploring new places, as well as coding and being
           creative with it. Playing The Sims 4 is a great way for me to unwind
           and relax after a long day in reality, and listening to K-pop music is
-          a favorite pastime of mine that always puts me in a good mood./
+          a favorite pastime of mine that always puts me in a good mood.
         </p>
       ),
     },
@@ -68,24 +68,24 @@ export default function About() {
       img: AboutBunnyExpert,
       text: (
         <p>
-          I created the{" "}
+          I created the
           <Link to="/" className="special-text">
             Bunny Expert
-          </Link>{" "}
+          </Link>
           website in order to help bunny owners or just lovers of bunnies take
           better care of their pet rabbits, including what they should and
           should not feed and identifying common diseases of rabbits by their
           early signs. Although I am not a professional or a veterinarian, I
           have done extensive research on rabbit care and have gained a lot of
-          experience with my own bunny. My sources of information include the{" "}
+          experience with my own bunny. My sources of information include the
           <a href="https://rabbit.org/" className="special-text">
             House Rabbit Society
           </a>
-          ,{" "}
+          ,
           <a href="https://www.rabbitnetwork.org/" className="special-text">
             House Rabbit Network
           </a>
-          ,{" "}
+          ,
           <a href="https://bunnylady.com/" className="special-text">
             The Bunny Lady
           </a>
@@ -112,12 +112,12 @@ export default function About() {
             className="special-text"
           >
             Spunkie
-          </a>{" "}
+          </a>
           is a male Lop-Eared rabbit living in Boston, MA. He was adopted from
-          the{" "}
+          the
           <a href="https://www.rabbitnetwork.org/" className="special-text">
             House Rabbit Network
-          </a>{" "}
+          </a>
           on April 12, 2021, as a stray rabbit with no information. Despite his
           past, he has exposed his personality as spunky, curious, smart,
           affectionate, and territorial. One of the special things about Spunkie
@@ -149,7 +149,7 @@ export default function About() {
                 polaroidImg={content.img}
                 alt={content.alt}
                 pos={content.pos}
-              />{" "}
+              />
               <ShadowCard content={content.text} />
             </div>
           ) : (
