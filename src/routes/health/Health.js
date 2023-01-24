@@ -5,10 +5,9 @@ import HealthDB from "../../assets/healthDB.json";
 
 import Question from "../../components/survey/Question";
 import Button from "../../components/input/Button";
+import Modal from "../../components/card/Modal";
 
 import "./styles.scss";
-import Modal from "../../components/card/Modal";
-import { clear } from "@testing-library/user-event/dist/clear";
 
 export default function Health() {
   const [symptoms, setSymptoms] = useContext(PredictionContext);
@@ -18,7 +17,7 @@ export default function Health() {
   // Update symptoms with user inputs and send it to BunnyDiseasesAPI
   const handleSubmit = (event) => {
     event.preventDefault();
-    //Make API call and store in data
+    // Make BunnyDiseasesAPI call
     axios
       .post("https://vadu81.deta.dev/prediction", symptoms)
       .then((res) => {

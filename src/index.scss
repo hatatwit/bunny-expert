@@ -35,4 +35,9 @@ h1 {
   color: #f9f1cc;
   text-shadow: 3px 3px 0px #ffb650, 6px 6px 0px #ffd662, 9px 9px 0px #ff80bf,
     12px 12px 0px #ef5097, 15px 15px 0px #6868ac, 18px 18px 0px #90b1e0;
+  @media (max-width: 900px) {
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #ffb650, 4px 4px 0px #ffd662, 6px 6px 0px #ff80bf,
+    8px 8px 0px #ef5097, 10px 10px 0px #6868ac, 12px 12px 0px #90b1e0;
+  }
 }

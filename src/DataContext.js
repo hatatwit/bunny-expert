@@ -8,7 +8,7 @@ export const FoodContext = createContext();
 export const FoodProvider = (props) => {
   const [data, setData] = useState();
 
-  // Make API call and store in data
+  // Make BunnyExpertAPI call
   useEffect(() => {
     axios
       .get("https://bunnyexpertapi.up.railway.app/food")

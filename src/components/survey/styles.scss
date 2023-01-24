@@ -26,6 +26,13 @@
             font-style: italic;
             color: gray;
         }
+
+        @media (max-width: 830px) {
+            .question-title,
+            .question-description {
+                font-size: 16px;
+            }
+        }
     }
 }
 

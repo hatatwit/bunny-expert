@@ -1,53 +1,129 @@
-.home {
+//----- Hero Section Start -----//
+.hero-section {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   overflow: auto;
   padding: 0 2em;
-}
-
-.col {
-  width: 50%;
-}
-
-.left,
-.right {
-  padding: 4em;
-
-  img {
-    width: 80%;
-    margin: auto;
-    display: block;
-  }
-}
-
-.sub-header {
-  font-size: 2em;
-  color: #e36138;
-}
-
-.header {
-  font-size: 3.5em;
-  padding: 0.5em 0;
-  line-height: 1.5em;
-
-  span {
-    font-size: 0.65em;
-    color: #66b9a2;
-  }
-}
-
-@media (max-width: 900px) {
-  .home {
-    flex-direction: column;
-  }
 
   .col {
-    width: 100%;
+    width: 50%;
+  }
+
+  .left {
+    padding: 4em;
+  }
+  .right {
+    img {
+      width: 80%;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .sub-header {
+    font-size: 2em;
+    color: #e36138;
   }
 
   .header {
-    font-size: 2em;
+    font-size: 3.5em;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+
+    span {
+      font-size: 0.65em;
+      color: #66b9a2;
+    }
+  }
+
+  @media (max-width: 900px) {
+    & {
+      flex-direction: column-reverse;
+
+      .col {
+        width: 100%;
+      }
+
+      .header {
+        font-size: 1.8em;
+      }
+
+      .sub-header {
+        font-size: 1.8em;
+      }
+
+      .left {
+        padding: 1em;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        display: block;
+      }
+    }
   }
 }
+
+//----- Hero Section End -----//
+
+//----- Feature Section -----//
+.feature-section {
+  margin-top: 2rem;
+  background-color: #fffbed;
+  border-top-left-radius: 6% ;
+  border-top-right-radius: 6% ;
+
+}
+.features {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  padding: 0 2em;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  .text-content {
+    width: 26em;
+    height: 26em;
+    margin-bottom: 5em;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    * {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    h2,
+    .fa-solid {
+      font-size: 23px;
+      color: #e36138;
+    }
+
+    .special-text {
+      color: #ef5097;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 0;
+
+    .text-content {
+      width: auto;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  }
+}
+//----- Feature Section -----//
