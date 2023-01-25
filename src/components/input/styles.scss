@@ -120,4 +120,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #e36138;
 }
+
+input[type="submit"]::after {
+  background-color: #e36138;
+  pointer-events: none;
+}
+
 //----- Button End -----//
