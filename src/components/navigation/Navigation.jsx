@@ -42,11 +42,13 @@ export default function Navigation() {
         <div className="social-icons">
           <a href="https://www.instagram.com/spunkie_thebun/?hl=en"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.youtube.com/@spunkiethebun3532"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
           <a href="mailto:hatrang061299@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <p>Copyright &copy; All rights reserved || Made with &hearts; by Trang Ha</p>
       </div>
+
+      
     </Fragment>
   );
 }
