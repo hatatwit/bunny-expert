@@ -11,7 +11,7 @@ $ npm start
 
 ```
 
-# Demo
+## Demo
 
 Let's check out [Bunny Expert](https://bunnyexpert.netlify.app/) website!
 
