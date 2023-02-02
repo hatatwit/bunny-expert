@@ -189,56 +189,56 @@
       "cause": "Bacterial infection.",
       "symptoms": "Enlargements under skin near jaw. Can occur on other parts of body where there are wounds or scratches.",
       "prevention": "Eliminate sharp objects that can injure the rabbit.",
-      "treatment": "Clip the fur around abscess, then lance and remove the pus. Disinfect with peroxide and use an approved antibiotic ointment or powder to promote healing."
+      "treatment": "Clip the fur around abscess, then lance and remove the pus by a qualified veterinarian.. Disinfect with peroxide and use an approved antibiotic oral or injectable to promote healing."
     },
     {
       "disease": "Bladder sludge",
       "cause": "High calcium diet, low water intake, overweight, lack of places to urinate, kidney disease, or cystitis.",
       "symptoms": "Lessening of appetite, fewer or cessation of droppings, blood may appear in the urine, loud painful grinding of the teeth, lethargy, unwillingness to move, hunched posture, pressing their abdomen on the ground, perineal scalding, straining or inability to urinate and passing thick, white, toothpaste like urine.",
       "prevention": "Drink more water, avoid feeding alfalfa hay and high calcium vegestables (kale, carrot tops, spinach, parsley, and spring greens)",
-      "treatment": "Urethral calculi are usually removed by flushing the stone back into the bladder and performing a cystotomy to remove it/them from the bladder."
+      "treatment": "Urethral calculi are usually removed by flushing the stone back into the bladder and performing a cystotomy to remove it/them from the bladder by a qualified veterinarian."
     },
     {
       "disease": "Ear mites",
       "cause": "Ear mites",
       "symptoms": "Scabs or a crust start forming at base of inner ear. Mites cause considerable irritation and rabbit will shake its head and try to scratch ears with hind feet.",
-      "prevention": "Do not let unaffected rabbits in contact with rabbits that have ear canker.",
-      "treatment": "Use a cotton swab to apply mineral, vegetable or olive oil over all visible crust. Usually one or two treatments is sufficient. "
+      "prevention": "Do not let unaffected rabbits in contact with rabbits that have ear mites.",
+      "treatment": "Treated with Ivermectin or Selamectin, prescribed by a qualified veterinarian."
     },
     {
       "disease": "Fur mites",
       "cause": "Fur mites",
       "symptoms": "A dry scaly skin (dandruff) on the shoulders and back.",
       "prevention": "Prevent contact with affected rabbits, keep clean living conditions.",
-      "treatment": "Ivermectin and Revolution (Selamectin) can kill larvae."
+      "treatment": "Treated with Ivermectin or Revolution (Selamectin), prescribed by a qualified veterinarian."
     },
     {
       "disease": "GI stasis",
       "cause": "Low fiber diet, stressful environment, dental problems, dehydration or other systemic illnesses, such as liver or kidney disease.",
       "symptoms": "Rabbit will sporadically eat small amounts of feed. A firm mass can be palpated in the stomach. Their fecal pellets become smaller, drier, and eventually stop being produced. Rabbits are not eating well get dehydrrated, lethargy and stop moving.",
       "prevention": "Feed high fiber diet, encourage physical exercise, have your rabbit checked regularly by veterinarian.",
-      "treatment": "Fluid therapy, syringe feeding, antibiotic, pain relivers, anti-inflammatory medications."
+      "treatment": "Massage your rabbit's tummy, administer 1ml Simethicone every 3 - 8 hours as needed, syringe feeding, syringe feeding, antibiotic, pain relivers, anti-inflammatory medications, fluid therapy."
     },
     {
       "disease": "Heatstroke",
       "cause": "Excessively high temperatures (above 85F) and high humidity (above 70%), obesity, poor ventilation, insufficient water and crowding.",
       "symptoms": "Increased respiration rate (panting) prostration, and excessive saliva discharge. Pregnant does and young in the nest box are most susceptible.",
       "prevention": "Provide shade, adequate air movement, and plenty of cool water on a hot day. Wet burlap in cage will aid in cooling. ",
-      "treatment": "Rabbits suffering from heat exhaustion can be immersed in lukewarm water to reduce body temperature to the normal 101-1040F. Apply a cool compress to the ears. "
+      "treatment": "Avoid area that is out of direct sunlight, provide plenty of cool fresh water, spray some water mist on their ears, place a stone or ceramic tiles where they usually hangout."
     },
     {
       "disease": "Overgrown teeth",
       "cause": "An inherited condition characterized by excessive growth of the teeth.",
       "symptoms": "Lower teeth protrude and upper teeth curve into the mouth.",
       "prevention": "Feed high fiber diet.",
-      "treatment": "veterinarians will use dental burrs on dental drills to file down the incisors and molars, often under anesthesia. If a rabbit is having recurrent dental problems, one long-term solution is to remove the affeted teeth."
+      "treatment": "Veterinarians will use dental burrs on dental drills to file down the incisors and molars, often under anesthesia. If a rabbit is having recurrent dental problems, one long-term solution is to remove the affeted teeth."
     },
     {
       "disease": "Snuffles",
       "cause": "A chronic upper respiratory ailment caused by bacterial infection.",
       "symptoms": "Typical early signs are a nasal discharge, watery eyes, head shaking, sneezing or rattling noise in breathing and a loss of weight. Continual infection may cause rabbits to become sterile.",
       "prevention": "Quarantine all new rabbits for a 3 week period. Cull rabbits that show continuous chronic symptoms of the disease. Reduce stress factors and have good management and sanitation practices.",
-      "treatment": "Tetracycline in feed may be effective in an uncomplicated case. For accurate treatment, the organism needs to be cultured and identified."
+      "treatment": "The bacterial infection will first be treated with antibiotics. For the infection to be completely treated, these treatments can be used for up to a few months."
     }
   ]
 }

@@ -43,7 +43,7 @@ export default function Home() {
                 <i class="fa-solid fa-virus"></i>
                 <h2>Illness Prediction</h2>
                 <p>
-                  A rabbit illness prediction tool uses machine learning algorithms to predict the diseases of the rabbit based on the symptoms provided by the user. The tool aims to help rabbit owners quickly identify potential health issues and seek appropriate treatment. However, more data is needed to make predictions more accurate. Please consider filling out the <a href="https://forms.gle/8Ngn2zvW4y7WXqkk6" className="special-text">Form</a> to help improve the website if you have some spare time. 
+                  A rabbit illness prediction tool uses machine learning algorithms to predict the diseases of the rabbit based on the symptoms provided by the user. The tool aims to help rabbit owners quickly identify potential health issues and seek appropriate treatment.
                 </p>
               </div>
             }
