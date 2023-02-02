@@ -1,5 +1,5 @@
 # bunny-expert
-A website allows users to look up safe and unsafe foods for rabbits and predict rabbit illnesses based on their symptoms using machine learning, with the help of the [BunnyExpertAPI](https://github.com/hatatwit/bunnyExpertAPI) and [BunnyDiseasesAPI](https://github.com/hatatwit/bunnyDiseasesAPI), which were also built by me.
+A website allows users to look up safe and unsafe foods for rabbits and predict rabbit illnesses based on their symptoms using machine learning, with the help of the [BunnyFoodAPI](https://github.com/hatatwit/bunnyFoodAPI) and [BunnyDiseasesAPI](https://github.com/hatatwit/bunnyDiseasesAPI), which were also built by me.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Let's check out [Bunny Expert](https://bunnyexpert.netlify.app/) website!
 * Context
 * Netlify
 * EmailJS 
-* BunnyExpertAPI
+* BunnyFoodAPI
 * BunnyDiseasesAPI
 
 ## License
