@@ -11,7 +11,7 @@ export const FoodProvider = (props) => {
   // Make BunnyFoodAPI call
   useEffect(() => {
     axios
-      .get("https://ed2zqa.deta.dev/foods")
+      .get("https://bunnyfoodapi-1-t0275560.deta.app/foods")
       .then((res) => {
         setData(res.data);
       })

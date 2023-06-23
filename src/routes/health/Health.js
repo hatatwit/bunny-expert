@@ -19,7 +19,7 @@ export default function Health() {
     event.preventDefault();
     // Make BunnyDiseasesAPI call
     axios
-      .post("https://vadu81.deta.dev/prediction", symptoms)
+      .post("https://bunnydiseaseapi.onrender.com/prediction", symptoms)
       .then((res) => {
         console.log(
           "Result: " +
